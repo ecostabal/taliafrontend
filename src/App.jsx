@@ -14,8 +14,8 @@ export const App = () => {
   return (
     <BrowserRouter>
       {isLoading ? (
-        <div className="flex justify-center items-center h-screen bg-zinc-900">
-          <ScaleLoader color="#eab308" />
+        <div className="flex justify-center items-center h-screen">
+          <ScaleLoader color="#4F68EE" />
         </div>
       ) : (
         <Router />
