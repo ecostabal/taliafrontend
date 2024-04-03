@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/enriquecostabal/",
+        "icon": "/github.svg"
+    },
+    {
+        "name": "GitHub",
+        "url": "https://github.com/ecostabal/",
+        "icon": "/github.svg"
+    },
+    {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/enrique-costabal/",
+        "icon": "/github.svg"
+    }
+]
