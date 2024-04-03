@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Router } from './general/Router.jsx';
-import { ScaleLoader } from 'react-spinners';
+import { PuffLoader } from 'react-spinners';
 
 export const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,7 +15,7 @@ export const App = () => {
     <BrowserRouter>
       {isLoading ? (
         <div className="flex justify-center items-center h-screen">
-          <ScaleLoader color="#4F68EE" />
+          <PuffLoader color="#4F68EE" />
         </div>
       ) : (
         <Router />

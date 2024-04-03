@@ -6,8 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        urbanist: ['Urbanist', 'sans-serif'],
-        exo2: ['Exo2', 'sans-serif'],
+        lora: ['Lora', 'sans-serif']
       },
       keyframes: {
         wiggle: {
