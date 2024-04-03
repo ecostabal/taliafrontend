@@ -144,7 +144,7 @@ export default function Header() {
           </Popover>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="app.talia.cl" className="font-lora font-light text-sm leading-6 text-gray-900">
+          <a href="https://app.talia.cl" target="_blank" rel="noopener noreferrer" className="font-lora font-light text-sm leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -212,12 +212,14 @@ export default function Header() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
-                    className="font-lora font-light -mx-3 block rounded-lg px-3 py-2.5 text-base leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
+                <a
+                  href="https://app.talia.cl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-lora font-light -mx-3 block rounded-lg px-3 py-2.5 text-base leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Log in
+                </a>
                 </div>
               </div>
             </div>
