@@ -14,11 +14,8 @@ import {
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Poderes Societarios', description: 'Informe instantáneo de poderes de una sociedad.', href: '#', icon: ChartPieIcon, soon: false },
+  { name: 'Nueva Función', description: 'Aquí describimos los siguientes productos.', href: '#', icon: CursorArrowRaysIcon, soon: true },
 ]
 
 const company = [
@@ -64,27 +61,28 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-md bg-white shadow-lg ring-1 ring-zinc-800/5">
-                <div className="p-4">
-                  {products.map((item) => (
-                    <div
-                      key={item.name}
-                      className="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-                    >
-                      <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-blue-500" aria-hidden="true" />
-                      </div>
-                      <div className="flex-auto">
-                        <a href={item.href} className="font-lora font-semibold block text-zinc-800">
-                          {item.name}
-                          <span className="absolute inset-0" />
-                        </a>
-                        <p className="font-lora font-light mt-1 text-gray-600">{item.description}</p>
-                      </div>
+            <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-md bg-white shadow-lg ring-1 ring-zinc-800/5">
+              <div className="p-4">
+                {products.map((item) => (
+                  <div
+                    key={item.name}
+                    className="group relative flex gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                  >
+                    <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <item.icon className="h-6 w-6 text-gray-600 group-hover:text-blue-500" aria-hidden="true" />
                     </div>
-                  ))}
-                </div>
-              </Popover.Panel>
+                    <div className="flex-auto">
+                      <a href={item.href} className="font-lora font-semibold block text-zinc-800">
+                        {item.name}
+                        {item.soon && <span className="ml-2 text-xs font-light px-2 bg-blue-100 rounded-full border border-blue-500 text-blue-500">Pronto</span>}
+                        <span className="absolute inset-0" />
+                      </a>
+                      <p className="font-lora font-light mt-1 text-gray-600">{item.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Popover.Panel>
             </Transition>
           </Popover>
 
@@ -151,20 +149,21 @@ export default function Header() {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {products.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="font-lora font-light group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base leading-7 text-zinc-800 hover:bg-gray-50"
-                    >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
-                      </div>
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
+              <div className="sm:hidden space-y-2 py-6">
+                {products.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="font-lora font-light group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base leading-7 text-zinc-800 hover:bg-gray-50"
+                  >
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                    </div>
+                    {item.name}
+                    {item.soon && <span className="ml-2 text-xs font-light px-2 bg-blue-100 rounded-full border border-blue-500 text-blue-500">Pronto</span>}
+                  </a>
+                ))}
+              </div>
                 <div className="space-y-2 py-6">
                   <a
                     href="#"
