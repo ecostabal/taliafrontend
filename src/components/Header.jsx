@@ -14,7 +14,7 @@ import {
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Poderes Societarios', description: 'Informe instantáneo de poderes de una sociedad.', href: '#', icon: ChartPieIcon, soon: false },
+  { name: 'Informes Societarios', description: 'Informe instantáneo de sociedades.', href: '#', icon: ChartPieIcon, soon: false },
   { name: 'Nueva Función', description: 'Aquí describimos los siguientes productos.', href: '#', icon: CursorArrowRaysIcon, soon: true },
 ]
 
