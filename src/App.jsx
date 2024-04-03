@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Header from '../src/components/Header.jsx';
+import Footer from '../src/components/Footer.jsx';
 import { Router } from './general/Router.jsx';
 import { PuffLoader } from 'react-spinners';
 
@@ -29,6 +30,7 @@ export const App = () => {
         <>
           <Header />
           <Router />
+          <Footer />
         </>
       )}
     </BrowserRouter>

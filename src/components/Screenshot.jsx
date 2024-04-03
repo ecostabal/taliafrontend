@@ -20,7 +20,7 @@ export default function Screenshot() {
               </defs>
             </svg>
             <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-              <h2 className="font-lora text-3xl font-bold text-white sm:text-4xl">
+              <h2 className="font-lora text-3xl font-light text-white sm:text-4xl">
                 Ahorra tiempo.
                 <br />
                 ¡Comienza hoy mismo!
@@ -29,7 +29,7 @@ export default function Screenshot() {
                 Con nuestro software, ahorrarás muchas horas de trabajo innecesario.
                 </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                <Link to={RoutePaths.DEMOLEAD} className="font-lora border px-4 py-2 text-sm leading-6 text-white hover:bg-white hover:text-zinc-800 transition-all duration-300 ease-in-out">
+                <Link to={RoutePaths.DEMOLEAD} className="font-lora border rounded-full px-4 py-2 text-sm leading-6 text-white hover:bg-white hover:text-zinc-800 transition-all duration-300 ease-in-out">
                 Solicita una demostración <span aria-hidden="true">→</span>
               </Link>
               </div>

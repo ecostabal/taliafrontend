@@ -35,7 +35,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
         <Link to={RoutePaths.HOME} className="-m-1.5 p-1.5">
           <span className="sr-only">Talia</span>
-          <img className="h-8 w-auto" src="/logotalia.svg" alt="" />
+          <img className="h-8 w-auto" src="/LOGOTEST.svg" alt="" />
         </Link>
         </div>
         <div className="flex lg:hidden">
@@ -136,7 +136,7 @@ export default function Header() {
                 <span className="sr-only">Talia</span>
                 <img
                   className="h-8 w-auto"
-                  src="/FAVICON.svg"
+                  src="/LOGOTEST.svg"
                   alt=""
                 />
               </Link>

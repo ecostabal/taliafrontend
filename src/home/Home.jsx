@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
+import Features from "../components/Features";
 import Screenshot from "../components/Screenshot";
 
 export const Home = () => {
@@ -8,6 +9,7 @@ export const Home = () => {
   return (
     <div>
       <HeroSection />
+      <Features />
       <Screenshot />
     </div>
   );
