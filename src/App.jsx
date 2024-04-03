@@ -4,6 +4,7 @@ import Header from '../src/components/Header.jsx';
 import Footer from '../src/components/Footer.jsx';
 import { Router } from './general/Router.jsx';
 import { PuffLoader } from 'react-spinners';
+import ScrollToTop from '/ScrollToTop'; // Importa el componente ScrollToTop
 
 const Loader = () => (
   <div className="flex justify-center items-center h-screen">
@@ -24,6 +25,7 @@ export const App = () => {
 
   return (
     <BrowserRouter>
+      <ScrollToTop /> {/* Aquí se coloca el componente ScrollToTop */}
       {isLoading ? (
         <Loader />
       ) : (
