@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { RoutePaths } from '../general/RoutePaths';
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
 export default function Screenshot() {
     return (
@@ -20,7 +21,7 @@ export default function Screenshot() {
               </defs>
             </svg>
             <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-              <h2 className="font-lora text-3xl font-light text-white sm:text-4xl">
+              <h2 className="font-lora text-3xl font-light sm:leading-snug text-white sm:text-4xl">
                 Ahorra tiempo.
                 <br />
                 ¡Comienza hoy mismo!
@@ -29,9 +30,10 @@ export default function Screenshot() {
                 Con nuestro software, ahorrarás muchas horas de trabajo innecesario.
                 </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                <Link to={RoutePaths.DEMOLEAD} className="font-lora border rounded-full px-4 py-2 text-sm leading-6 text-white hover:bg-white hover:text-zinc-800 transition-all duration-300 ease-in-out">
-                Solicita una demostración <span aria-hidden="true">→</span>
-              </Link>
+              <Link to={RoutePaths.DEMOLEAD} className="rounded-full font-lora text-md border border-white text-white p-3 lg:p-4 hover:bg-white hover:text-zinc-800 flex items-center justify-center transition-all duration-300 ease-in-out lg:w-52">
+                <span>Solicitar Demo</span>
+                <ArrowLongRightIcon className="ml-2 h-4 w-4" />
+            </Link>
               </div>
             </div>
             <div className="relative mt-16 h-80 lg:mt-8">
