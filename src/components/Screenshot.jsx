@@ -33,13 +33,6 @@ export default function Screenshot() {
               <Link
                   to={RoutePaths.DEMOLEAD}
                   className="text-md mt-0 flex items-center justify-center border border-white p-3 font-lora text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-zinc-800 lg:mt-12 w-52 lg:p-4"
-                  style={{ transition: "box-shadow 0.3s", boxShadow: "none" }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.boxShadow = "5px 5px #7775D6";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.boxShadow = "none";
-                  }}
                 >
                   <span>Solicitar Demo</span>
                   <ArrowLongRightIcon className="ml-2 h-4 w-4" />
