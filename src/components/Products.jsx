@@ -26,13 +26,13 @@ export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState(products[0]);
 
   return (
-    <div className="bg-gray-100/40 pb-24 pl-6 pr-9 xl:pb-48 xl:pl-12 xl:pr-14">
+    <div className="bg-gray-100/40 pb-28 pl-6 pr-9 xl:pb-48 xl:pl-12 xl:pr-14">
       <div className="mx-auto max-w-6xl">
         <div
           className="relative overflow-hidden border border-zinc-800 bg-white sm:rounded-3xl sm:px-8 sm:py-8"
           style={{ boxShadow: "10px 10px #3A3A3A" }}
         >
-          <div className="grid max-w-6xl grid-cols-1 gap-12 p-6 lg:grid-cols-6 lg:gap-24 xl:items-start">
+          <div className="grid max-w-6xl grid-cols-1 gap-12 px-6 pt-6 pb-12 lg:grid-cols-6 lg:gap-24 xl:items-start">
             <div className="grid grid-cols-2 gap-6 xl:gap-0 xl:grid-cols-1 lg:col-span-2 lg:mt-0 lg:flex lg:flex-col lg:space-y-8">
               {products.map((product, index) => (
                 <div key={index} className="relative">
@@ -51,10 +51,10 @@ export default function Products() {
                   >
                     <img
                       src={product.icon}
-                      className="h-6 w-6"
+                      className="h-4 w-4 sm:h-6 sm:w-6"
                       alt={product.name}
                     />
-                    <span>{product.name}</span>
+                    <span className="text-sm md:text-lg">{product.name}</span>
                   </button>
                   {product.soon && (
                     <div className="absolute right-2 top-2 mr-2 mt-2 hidden rounded-full border border-blue-500 bg-blue-100 px-2 py-1 font-lora text-xs text-blue-500 sm:block">
@@ -65,7 +65,7 @@ export default function Products() {
               ))}
             </div>
 
-            <div className="h-96 lg:col-span-4 lg:mt-4">
+            <div className="lg:col-span-4 lg:mt-4">
               {selectedProduct && (
                 <div className="space-y-12">
                   <h3 className="font-lora text-3xl text-blue-500">
