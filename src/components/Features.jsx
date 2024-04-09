@@ -1,62 +1,90 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import {
+  ArrowPathIcon,
+  CloudArrowUpIcon,
+  FingerPrintIcon,
+  LockClosedIcon,
+} from "@heroicons/react/24/outline";
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: "Proceso Eficiente",
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
+      "Obtén informes legales de manera fluida y rápida. Carga tus antecedentes y deja que nuestro software y abogados guíen el proceso.",
+    icon: "/featuresicons/4.svg",
   },
   {
-    name: 'SSL certificates',
+    name: "Análisis Automatizado",
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-    icon: LockClosedIcon,
+      "Reduce el tiempo de revisión de partners comerciales a través de nuestros informes automáticos sobre su situación.",
+    icon: "/featuresicons/1.svg",
   },
   {
-    name: 'Simple queues',
+    name: "Colaboración Efectiva",
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-    icon: ArrowPathIcon,
+      "Logra un control simple y efectivo de cada operación. Cada colaborador de tu equipo tiene un perfil para realizar y revisar solicitudes.",
+    icon: "/featuresicons/6.svg",
   },
   {
-    name: 'Advanced security',
+    name: "Informes Personalizados",
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+      "Trabaja con más velocidad al simplificar la información. Nuestros informes muestran solo lo que necesitas ver.",
+    icon: "/featuresicons/2.svg",
   },
-]
+  {
+    name: "Seguridad Garantizada",
+    description:
+      "Mantén tu información segura y organizada. Nuestra biblioteca legal te respalda y permite acceder a la información cuando la necesites.",
+    icon: "/featuresicons/3.svg",
+  },
+  {
+    name: "Monitoreo Constante",
+    description:
+      "Obtén información constante para tus operaciones. Nuestro software te notificará sobre cambios en sociedades.",
+    icon: "/featuresicons/5.svg",
+  },
+];
+
 
 export default function Features() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="bg-gray-100/40 py-24">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="font-lora font-light leading-7 text-blue-500">Maximiza tu tiempo.</h2>
-          <p className="font-lora mt-2 text-3xl font-light tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="font-lora font-light leading-7 text-blue-500">
+            Maximiza tu tiempo.
+          </h2>
+          <p className="mt-2 font-lora text-3xl font-light tracking-tight text-gray-900 sm:text-4xl">
             Todo lo que necesitas en una sola app.
           </p>
-          <p className="font-lora mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+          <p className="mt-6 font-lora text-lg leading-8 text-gray-600">
+            Somos una plataforma digital que combina el trabajo de abogados, IA
+            e integración con instituciones claves para conocer el estado legal
+            y financiero de tus clientes para que puedas operar de forma rápida
+            y segura.
           </p>
         </div>
-        <div className="font-lora mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <div className="mx-auto mt-16 max-w-2xl font-lora sm:mt-20 lg:mt-24 lg:max-w-4xl">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-16">
                 <dt className="font-lora font-semibold leading-7 text-blue-500">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500">
-                    <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center">
+                    <img
+                      src={feature.icon}
+                      className="h-10 w-10"
+                      alt={feature.name}
+                    />
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">{feature.description}</dd>
+                <dd className="mt-2 text-base leading-7 text-gray-600">
+                  {feature.description}
+                </dd>
               </div>
             ))}
           </dl>
         </div>
       </div>
     </div>
-  )
+  );
 }
