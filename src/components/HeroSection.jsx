@@ -15,7 +15,7 @@ export default function HeroSection() {
           <div className="flex items-center space-x-2">
             <p className="flex items-center rounded-full border border-blue-500 bg-blue-100 px-3 py-1 font-lora text-xs text-blue-500">
               <ShieldCheckIcon className="mr-1 h-4 w-4" />
-              Software 100% Online y Seguro{" "}
+              <p>Software <span className="font-semibold">100% Online y Seguro</span></p>
             </p>
           </div>
           <h1 className="font-lora text-3xl text-zinc-800 sm:text-4xl leading-snug sm:leading-snug">
