@@ -209,9 +209,9 @@ export default function Header() {
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
+            <div className="flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6 sm:hidden">
+                <div className="mt-12 space-y-2 py-6 sm:hidden">
                   {products.map((item) => (
                     <a
                       key={item.name}
@@ -225,7 +225,7 @@ export default function Header() {
                       />
                       {item.name}
                       {item.soon && (
-                        <span className="ml-2 rounded-full border border-blue-500 bg-blue-100 px-2 text-xs font-light text-blue-500">
+                        <span className="-ml-4 rounded-full border border-blue-500 bg-blue-100 px-2 text-xs font-light text-blue-500">
                           Pronto
                         </span>
                       )}
