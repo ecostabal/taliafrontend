@@ -37,7 +37,7 @@ export default function Products() {
               {products.map((product, index) => (
                 <div key={index} className="relative">
                   <button
-                    className={`flex w-full items-center justify-center sm:items-start sm:justify-start space-x-4 border bg-white px-6 py-8 font-lora xl:text-xl ${
+                    className={`flex w-full items-center justify-center sm:items-start sm:justify-start space-x-2 sm:space-x-4 border bg-white px-6 py-8 font-lora xl:text-xl ${
                       selectedProduct.name === product.name
                         ? "border-zinc-800 text-blue-500 shadow-md"
                         : "border-gray-100"
