@@ -9,7 +9,7 @@ import {
 
 export default function HeroSection() {
   return (
-    <div className="mx-auto max-w-6xl pt-12 pb-24 xl:py-24 sm:pb-48 px-6 xl:px-0">
+    <div className="mx-auto max-w-6xl pt-12 pb-24 xl:pt-24 xl:pb-48 px-6 xl:px-0">
       <div className="grid grid-cols-1 items-center gap-32 lg:grid-cols-2">
         <div className="space-y-12">
           <div className="flex items-center space-x-2">
@@ -27,7 +27,7 @@ export default function HeroSection() {
           <div className="flex items-center gap-4">
             <Link
               to={RoutePaths.DEMOLEAD}
-              className="text-xs sm:text-md flex items-center justify-center rounded-full border border-zinc-800 p-3 font-lora text-zinc-800 transition-all duration-300 ease-in-out hover:bg-blue-500 w-44 lg:p-4"
+              className="text-xs sm:text-lg flex items-center justify-center rounded-full border border-zinc-800 p-3 font-lora text-zinc-800 transition-all duration-300 ease-in-out hover:bg-blue-500 w-44 xl:w-52 lg:p-4"
               style={{ transition: "box-shadow 0.3s", boxShadow: "none" }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow = "5px 5px #3A3A3A";
@@ -41,7 +41,7 @@ export default function HeroSection() {
             </Link>
             <a
               href="/"
-              className="text-xs sm:text-md flex items-center justify-center rounded-full border border-white p-3 font-lora text-zinc-800 transition-all duration-300 ease-in-out hover:text-blue-500 lg:p-4"
+              className="text-xs sm:text-lg flex items-center justify-center rounded-full border border-white p-3 font-lora text-zinc-800 transition-all duration-300 ease-in-out hover:text-blue-500 lg:p-4"
             >
               Ver Tutorial
               <VideoCameraIcon className="ml-2 h-4 w-4" />
