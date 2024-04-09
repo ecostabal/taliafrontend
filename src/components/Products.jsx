@@ -32,12 +32,12 @@ export default function Products() {
           className="relative overflow-hidden border border-zinc-800 bg-white sm:rounded-3xl sm:px-8 sm:py-8"
           style={{ boxShadow: "10px 10px #3A3A3A" }}
         >
-          <div className="grid max-w-6xl grid-cols-1 gap-12 px-6 pt-6 pb-12 lg:grid-cols-6 lg:gap-24 xl:items-start">
-            <div className="grid grid-cols-2 gap-6 xl:gap-0 xl:grid-cols-1 lg:col-span-2 lg:mt-0 lg:flex lg:flex-col lg:space-y-8">
+          <div className="grid max-w-6xl grid-cols-1 gap-12 px-6 pb-12 pt-6 lg:grid-cols-6 lg:gap-24 xl:items-start">
+            <div className="grid grid-cols-2 gap-6 lg:col-span-2 lg:mt-0 lg:flex lg:flex-col lg:space-y-8 xl:grid-cols-1 xl:gap-0">
               {products.map((product, index) => (
                 <div key={index} className="relative">
                   <button
-                    className={`flex w-full items-center space-x-4 border bg-white px-6 py-8 font-lora xl:text-xl ${
+                    className={`flex w-full items-center justify-center sm:items-start sm:justify-start space-x-4 border bg-white px-6 py-8 font-lora xl:text-xl ${
                       selectedProduct.name === product.name
                         ? "border-zinc-800 text-blue-500 shadow-md"
                         : "border-gray-100"
@@ -54,7 +54,9 @@ export default function Products() {
                       className="h-4 w-4 sm:h-6 sm:w-6"
                       alt={product.name}
                     />
-                    <span className="text-sm md:text-lg">{product.name}</span>
+                    <span className="text-sm sm:block sm:text-center md:text-lg">
+                      {product.name}
+                    </span>
                   </button>
                   {product.soon && (
                     <div className="absolute right-2 top-2 mr-2 mt-2 hidden rounded-full border border-blue-500 bg-blue-100 px-2 py-1 font-lora text-xs text-blue-500 sm:block">
