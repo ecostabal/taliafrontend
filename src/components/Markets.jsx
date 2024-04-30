@@ -25,7 +25,7 @@ const markets = [
   {
     name: "Telecomunicaciones",
     description: "A través de nuestra plataforma, te facilitamos el estudio legal y situ.",
-    icon: "/marketicons/insurance.svg",
+    icon: "/marketicons/comunications.svg",
   },
 ];
 
