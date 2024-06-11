@@ -20,7 +20,7 @@ export const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-      setIsMaintenance(false);
+      setIsMaintenance(true);
     }, 1000); // Mostrar el loader por al menos 1 segundo
 
     return () => clearTimeout(timer);
