@@ -9,7 +9,7 @@ const products = [
   {
     name: "Informes de Sociedad y Poderes",
     description:
-      "Estructura legal de una organización, estatutos, modificaciones, representantes con sus debidas facultades y limitaciones, socios y capital.",
+      "Análisis legal de una organización, estatutos, modificaciones, representantes con sus debidas facultades y limitaciones, socios y capital.",
     href: "#",
     icon: "/taliaicons/sociedadesypoderes.svg",
     soon: false,
@@ -121,13 +121,6 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a
-            href="#"
-            className="font-lora text-sm font-light leading-6 text-zinc-800"
-          >
-            Features
-          </a>
-
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 font-lora text-sm font-light leading-6 text-zinc-800">
               Nosotros
@@ -182,7 +175,7 @@ export default function Header() {
               e.currentTarget.style.boxShadow = "none";
             }}
           >
-            Log in <span aria-hidden="true">&rarr;</span>
+            Ingresa <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -198,7 +191,7 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <Link to={RoutePaths.HOME} className="-m-1.5 p-1.5">
                 <span className="sr-only">Talia</span>
-                <img className="h-8 w-auto" src="/LOGOTEST.svg" alt="" />
+                <img className="h-8 w-auto" src="/logotalia.svg" alt="" />
               </Link>
               <button
                 type="button"
@@ -233,12 +226,6 @@ export default function Header() {
                   ))}
                 </div>
                 <div className="space-y-2 py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 font-lora text-base font-light leading-7 text-zinc-800 hover:bg-gray-50"
-                  >
-                    Features
-                  </a>
 
                   {company.map((item) => (
                     <a
@@ -257,7 +244,7 @@ export default function Header() {
                     rel="noopener noreferrer"
                     className="-mx-3 block rounded-lg px-3 py-2.5 font-lora text-base font-light leading-7 text-zinc-800 hover:bg-gray-50"
                   >
-                    Log in
+                    Ingresa
                   </a>
                 </div>
               </div>

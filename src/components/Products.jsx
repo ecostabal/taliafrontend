@@ -7,7 +7,7 @@ const products = [
   {
     name: "Sociedades & Poderes",
     description:
-    "Estructura legal de una organización, estatutos, modificaciones, representantes con sus debidas facultades y limitaciones, socios y capital.",
+      "Análisis legal de una organización, estatutos, modificaciones, representantes con sus debidas facultades y limitaciones, socios y capital.",
     icon: "/taliaicons/sociedadesypoderes.svg",
     link: "#",
     soon: false,
@@ -15,7 +15,7 @@ const products = [
   {
     name: "Perfil Comercial",
     description:
-    "Perfilamiento comercial completo con tramos de venta, socios, sociedades en las que participa, activos, deudas, juicios, etc.",
+      "Perfilamiento comercial completo con tramos de venta, socios, sociedades en las que participa, activos, deudas, juicios, etc.",
     icon: "/taliaicons/perfilcomercial.svg",
     link: "#",
     soon: false,
@@ -26,8 +26,11 @@ export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState(products[0]);
 
   return (
-    <div className="bg-gray-100/40 pb-28 pl-6 pr-9 xl:pb-48 xl:pl-12 xl:pr-14">
+    <div className="bg-gray-100/30 py-28 pl-6 pr-9 xl:pb-24 xl:pl-12 xl:pr-14">
       <div className="mx-auto max-w-6xl">
+        <h1 className="mb-12 font-lora text-2xl leading-snug text-zinc-800 sm:text-2xl sm:leading-snug">
+          Nuestros Productos
+        </h1>
         <div
           className="relative overflow-hidden border border-zinc-800 bg-white sm:rounded-3xl sm:px-8 sm:py-8"
           style={{ boxShadow: "10px 10px #3A3A3A" }}
@@ -35,9 +38,9 @@ export default function Products() {
           <div className="grid max-w-6xl grid-cols-1 gap-12 px-6 pb-12 pt-6 lg:grid-cols-6 lg:gap-24 xl:items-start">
             <div className="grid grid-cols-2 gap-6 lg:col-span-2 lg:mt-0 lg:flex lg:flex-col lg:space-y-8 xl:grid-cols-1 xl:gap-0">
               {products.map((product, index) => (
-                <div key={index} className="relative">
+                <div key={index} className="">
                   <button
-                    className={`flex w-full items-center justify-center sm:items-start sm:justify-start space-x-2 sm:space-x-4 border bg-white px-6 py-8 font-lora xl:text-xl ${
+                    className={`flex w-full items-center justify-center space-x-2 border bg-white px-6 py-8 font-lora sm:items-start sm:justify-start sm:space-x-4 xl:text-xl ${
                       selectedProduct.name === product.name
                         ? "border-zinc-800 text-blue-500 shadow-md"
                         : "border-gray-100"
@@ -49,15 +52,18 @@ export default function Products() {
                     }
                     onClick={() => setSelectedProduct(product)}
                   >
-                    <img
-                      src={product.icon}
-                      className="h-4 w-4 sm:h-8 sm:w-8"
-                      alt={product.name}
-                    />
-                    <span className="text-sm sm:block sm:text-center md:text-lg">
-                      {product.name}
-                    </span>
+                    <div className="flex items-center space-x-2 md:space-x-4">
+                      <img
+                        src={product.icon}
+                        className="h-4 w-4 sm:h-8 sm:w-8"
+                        alt={product.name}
+                      />
+                      <span className="text-sm sm:text-center md:text-sm">
+                        {product.name}
+                      </span>
+                    </div>
                   </button>
+
                   {product.soon && (
                     <div className="absolute right-2 top-2 mr-2 mt-2 hidden rounded-full border border-blue-500 bg-blue-100 px-2 py-1 font-lora text-xs text-blue-500 sm:block">
                       Pronto
@@ -66,7 +72,6 @@ export default function Products() {
                 </div>
               ))}
             </div>
-
             <div className="lg:col-span-4 lg:mt-4">
               {selectedProduct && (
                 <div className="space-y-12">

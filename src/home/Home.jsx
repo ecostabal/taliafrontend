@@ -11,10 +11,7 @@ export const Home = () => {
   return (
     <div>
       <HeroSection />
-      <Features />
       <Products />
-      <Markets />
-      <Screenshot />
     </div>
   );
 };
