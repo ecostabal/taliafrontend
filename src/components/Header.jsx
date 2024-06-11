@@ -7,20 +7,20 @@ import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/20/solid";
 
 const products = [
   {
-    name: "Informes Societarios",
+    name: "Informes de Sociedad y Poderes",
     description:
-      "Consulta el estudio legal y situación financiera de tus partners comerciales mediante un poderos análisis.",
+      "Estructura legal de una organización, estatutos, modificaciones, representantes con sus debidas facultades y limitaciones, socios y capital.",
     href: "#",
-    icon: "/InformeSocietarioIcon.svg",
+    icon: "/taliaicons/sociedadesypoderes.svg",
     soon: false,
   },
   {
-    name: "Chatbox",
+    name: "Informes de Perfil Comercial",
     description:
-      "Consulta y recibe respuestas instantáneas relacionadas a cualquier materia relacionada con el estudio de tus clientes.",
+      "Perfilamiento comercial completo con tramos de venta, socios, sociedades en las que participa, activos, deudas, juicios, etc.",
     href: "#",
-    icon: "/ChatboxTaliaIcon.svg",
-    soon: true,
+    icon: "/taliaicons/perfilcomercial.svg",
+    soon: false,
   },
 ];
 
@@ -51,7 +51,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link to={RoutePaths.HOME} className="-m-1.5 p-1.5">
             <span className="sr-only">Talia</span>
-            <img className="h-8 w-auto" src="/LOGOTEST.svg" alt="" />
+            <img className="h-8 w-auto" src="/logotalia.svg" alt="" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -67,7 +67,7 @@ export default function Header() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 font-lora text-sm font-light leading-6 text-zinc-800">
-              Soluciones
+              Productos
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
@@ -93,7 +93,7 @@ export default function Header() {
                       <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <img
                           src={item.icon}
-                          className="h-8 w-8"
+                          className="h-12 w-12"
                           alt={item.name}
                         />
                       </div>

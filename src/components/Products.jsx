@@ -5,20 +5,20 @@ import { RoutePaths } from "../general/RoutePaths";
 
 const products = [
   {
-    name: "Informes",
+    name: "Sociedades & Poderes",
     description:
-      "A través de nuestra plataforma, te facilitamos el estudio legal y situación financiera de tus partners comerciales, con prontitud y seguridad, mediante el análisis de sus estatutos y poderes, conexiones API a diversas instituciones que requieras y la elaboración de los contratos comerciales que necesites para que puedas operar con fluidez y tranquilidad.",
-    icon: "/InformeSocietarioIcon.svg",
+    "Estructura legal de una organización, estatutos, modificaciones, representantes con sus debidas facultades y limitaciones, socios y capital.",
+    icon: "/taliaicons/sociedadesypoderes.svg",
     link: "#",
     soon: false,
   },
   {
-    name: "Chatbox",
+    name: "Perfil Comercial",
     description:
-      "Además del apoyo que brindan nuestros abogados, contamos con un chat basado en IA, a disposición de tu equipo para que puedas consultar y recibir respuestas instantáneas relacionado a cualquier materia relacionada con el estudio de tus clientes.",
-    icon: "/ChatboxTaliaIcon.svg",
+    "Perfilamiento comercial completo con tramos de venta, socios, sociedades en las que participa, activos, deudas, juicios, etc.",
+    icon: "/taliaicons/perfilcomercial.svg",
     link: "#",
-    soon: true,
+    soon: false,
   },
 ];
 
@@ -51,7 +51,7 @@ export default function Products() {
                   >
                     <img
                       src={product.icon}
-                      className="h-4 w-4 sm:h-6 sm:w-6"
+                      className="h-4 w-4 sm:h-8 sm:w-8"
                       alt={product.name}
                     />
                     <span className="text-sm sm:block sm:text-center md:text-lg">
