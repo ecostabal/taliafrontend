@@ -26,7 +26,7 @@ export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState(products[0]);
 
   return (
-    <div className="bg-gray-100/30 py-28 pl-6 pr-9 xl:pb-24 xl:pl-12 xl:pr-14">
+    <div className="bg-gray-100/50 py-28 pl-6 pr-9 xl:pb-24 xl:pl-12 xl:pr-14">
       <div className="mx-auto max-w-6xl">
         <h1 className="mb-12 font-lora text-2xl leading-snug text-zinc-800 sm:text-2xl sm:leading-snug">
           Nuestros Productos
