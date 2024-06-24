@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        lora: ['Lora', 'sans-serif']
+        reddit: ['RedditSans', 'sans-serif'],
       },
       keyframes: {
         wiggle: {
