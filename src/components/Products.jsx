@@ -92,7 +92,7 @@ export default function Products() {
                       e.currentTarget.style.boxShadow = "none";
                     }}
                   >
-                    <span>Solicitar Demo</span>
+                    <span>Contáctanos</span>
                     <ArrowLongRightIcon className="ml-2 h-4 w-4" />
                   </Link>
                 </div>
