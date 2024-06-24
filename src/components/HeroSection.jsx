@@ -20,7 +20,7 @@ export default function HeroSection() {
               </p>
             </p>
           </div>
-          <h1 className="font-reddit text-3xl font-semibold leading-snug text-zinc-800 sm:text-4xl sm:leading-snug">
+          <h1 className="font-reddit text-3xl font-normal leading-snug text-zinc-800 sm:text-4xl sm:leading-snug">
             Entregamos soluciones inteligentes y seguras para{" "}
             <span className="font-semibold text-blue-500">
               optimizar tus procesos legales.
