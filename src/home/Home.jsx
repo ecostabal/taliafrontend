@@ -11,6 +11,8 @@ export const Home = () => {
   return (
     <div>
       <HeroSection />
+      <Products />
+      <Features />
     </div>
   );
 };

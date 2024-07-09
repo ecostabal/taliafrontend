@@ -3,4 +3,5 @@ export const RoutePaths = {
   DEMOLEAD : '/demo',
   NOTFOUND: '/404',
   SOCIEDADES: '/sociedades',
+  MAINTENANCE: '/construccion'
 };

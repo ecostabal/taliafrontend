@@ -26,8 +26,7 @@ export default function DemoLeadComponent() {
       !lastName ||
       !email ||
       !phone ||
-      !companyName ||
-      !website
+      !companyName
     ) {
       alert("Por favor, completa todos los campos requeridos.");
       return;
@@ -39,7 +38,6 @@ export default function DemoLeadComponent() {
       email,
       phone,
       companyName,
-      website,
     };
 
     const success = await sendQuoteToMonday(formData);
@@ -164,23 +162,6 @@ export default function DemoLeadComponent() {
                     type="text"
                     name="company-name"
                     id="company-name"
-                    className="block w-full border-0 px-3.5 py-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
-                    required
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="company-url"
-                  className="block font-reddit text-sm font-light leading-6 text-gray-900"
-                >
-                  Sitio Web *
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    name="company-url"
-                    id="company-url"
                     className="block w-full border-0 px-3.5 py-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
                     required
                   />

@@ -36,7 +36,7 @@ export default function HeroSection() {
           <div className="flex items-center gap-4">
             <Link
               to={RoutePaths.DEMOLEAD}
-              className="sm:text-md flex items-center justify-center border border-zinc-800 px-8 py-4 font-reddit text-sm text-zinc-800 transition-all duration-300 ease-in-out hover:bg-blue-500"
+              className="sm:text-md flex items-center justify-center border bg-blue-500 border-zinc-800 px-8 py-4 font-reddit text-sm text-white transition-all duration-300 ease-in-out hover:bg-blue-500"
               style={{ transition: "box-shadow 0.3s", boxShadow: "none" }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow = "5px 5px #3A3A3A";

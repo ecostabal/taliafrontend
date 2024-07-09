@@ -83,7 +83,7 @@ export default function Products() {
                   </p>
                   <Link
                     to={RoutePaths.DEMOLEAD}
-                    className="text-md mt-12 flex items-center justify-center rounded-full border border-zinc-800 p-3 font-reddit text-zinc-800 transition-all duration-300 ease-in-out hover:bg-blue-500 lg:mt-12 lg:w-52 lg:p-4"
+                    className="text-md mt-12 flex items-center justify-center border border-zinc-800 p-3 font-reddit text-zinc-800 transition-all duration-300 ease-in-out hover:bg-blue-500 lg:mt-12 lg:w-52 lg:p-4"
                     style={{ transition: "box-shadow 0.3s", boxShadow: "none" }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.boxShadow = "5px 5px #3A3A3A";
