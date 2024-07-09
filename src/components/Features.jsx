@@ -7,51 +7,57 @@ import {
 
 const features = [
   {
-    name: "Sociedades",
+    name: "Proceso Eficiente",
     description:
-      "Obtén informes legales de manera fluida y rápida. Carga tus antecedentes y deja que nuestro software y abogados guíen el proceso.",
+      "Obtén informes legales de manera fluida y rápida. Carga tus antecedentes y deja que nuestro (negrita) software y abogados // guíen el proceso.",
     icon: "/featuresicons/4.svg",
   },
   {
-    name: "Corporativo",
+    name: "Análisis Automatizado",
     description:
-      "Reduce el tiempo de revisión de partners comerciales a través de nuestros informes automáticos sobre su situación.",
+      "Reduce el tiempo de revisión de partners comerciales a través de nuestros informes automáticos sobre su situación comercial y legal.",
     icon: "/featuresicons/1.svg",
   },
   {
-    name: "Laboral y Migratorio",
+    name: "Colaboración Efectiva",
     description:
       "Logra un control simple y efectivo de cada operación. Cada colaborador de tu equipo tiene un perfil para realizar y revisar solicitudes.",
     icon: "/featuresicons/6.svg",
   },
   {
-    name: "Inmobiliario",
+    name: "Informes Personalizados",
     description:
       "Trabaja con más velocidad al simplificar la información. Nuestros informes muestran solo lo que necesitas ver.",
     icon: "/featuresicons/2.svg",
   },
   {
-    name: "Administrativo",
+    name: "Seguridad Garantizada",
     description:
       "Mantén tu información segura y organizada. Nuestra biblioteca legal te respalda y permite acceder a la información cuando la necesites.",
     icon: "/featuresicons/3.svg",
   },
+  {
+    name: "Monitoreo Constante",
+    description:
+      "Obtén información constante para tus operaciones. Nuestro software te notificará sobre cambios en sociedades.",
+    icon: "/featuresicons/5.svg",
+  },
 ];
+
 
 export default function Features() {
   return (
-    <div className="bg-gray-100/40 py-24">
+    <div className="py-24">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="font-reddit font-light leading-7 text-blue-500">
-            Áreas de Práctica.
+          <h2 className="font-reddit leading-7 text-blue-500">
+            Maximiza tu tiempo.
           </h2>
-          <p className="mt-2 font-reddit text-3xl font-light tracking-tight text-gray-900 sm:text-4xl">
-            Todo lo que necesitas en una sola app.
+          <p className="mt-2 font-reddit text-3xl tracking-tight text-gray-900 sm:text-4xl">
+            Todo lo que necesitas en una sola plataforma.
           </p>
           <p className="mt-6 font-reddit text-lg leading-8 text-gray-600">
-            Usamos tecnología aplicada a mejorar procesos en diferentes áreas de
-            práctica.
+            Somos un equipo especializado en ofrecerte informes legales y comerciales de manera eficiente. Con nuestra plataforma, obtén un estudio legal de sociedades o personas naturales de forma rápida y fluida. Carga tus antecedentes y deja que nuestro software y abogados guíen el proceso.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl font-reddit sm:mt-20 lg:mt-24 lg:max-w-4xl">
