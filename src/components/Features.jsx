@@ -9,7 +9,7 @@ const features = [
   {
     name: "Proceso Eficiente",
     description:
-      "Obtén informes legales de manera fluida y rápida. Carga tus antecedentes y deja que nuestro (negrita) software y abogados // guíen el proceso.",
+      "Obtén informes legales de manera fluida y rápida. Carga tus antecedentes y deja que nuestro software y abogados guíen el proceso.",
     icon: "/featuresicons/4.svg",
   },
   {
