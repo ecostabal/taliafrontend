@@ -12,17 +12,13 @@ export default function HeroSection() {
 
   useEffect(() => {
     // Cargar el archivo JSON de animación desde el directorio public
-    fetch('/TALIA-ANIMACION.json')
-      .then(response => response.json())
-      .then(data => setAnimationData(data))
-      .catch(error => {
-        console.error('Error loading animation:', error);
+    fetch("/TALIA-ANIMACION.json")
+      .then((response) => response.json())
+      .then((data) => setAnimationData(data))
+      .catch((error) => {
+        console.error("Error loading animation:", error);
       });
   }, []);
-
-  if (!animationData) {
-    return <div>Cargando animación...</div>;
-  }
 
   return (
     <div className="mx-auto max-w-6xl px-6 pb-24 pt-12 xl:px-0 xl:pb-48 xl:pt-24">
@@ -32,7 +28,8 @@ export default function HeroSection() {
             <div className="font-lora flex items-center rounded-full border border-blue-500 bg-blue-100 px-3 py-1 text-xs text-blue-500">
               <ShieldCheckIcon className="mr-1 h-4 w-4" />
               <p className="font-reddit">
-                Plataforma <span className="font-semibold">Online y Segura</span>
+                Plataforma{" "}
+                <span className="font-semibold">Online y Segura</span>
               </p>
             </div>
           </div>
