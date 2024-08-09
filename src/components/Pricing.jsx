@@ -111,7 +111,7 @@ import {
                       </ul>
                     </div>
                     <Link
-                      to={RoutePaths.DEMOLEAD}
+                      to={RoutePaths.CONTACTANOS}
                       aria-describedby={tier.id}
                       className="mt-8 flex items-center justify-center bg-blue-500 px-8 py-4 font-reddit text-sm font-semibold text-white transition-all duration-300 ease-in-out"
                       style={{ transition: "box-shadow 0.3s", boxShadow: "none" }}
