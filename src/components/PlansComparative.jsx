@@ -58,7 +58,7 @@ export default function PlansComparative() {
   return (
     <div className="isolate mx-auto hidden max-w-6xl md:block">
       <div className="relative mx-32 mb-24">
-        <table className="w-full table-fixed border-separate border-spacing-x-8 shadow-xl rounded-md bg-gray-900 p-4 pb-8 text-left">
+        <table className="w-full table-fixed border-separate border-spacing-x-8 rounded-md bg-gray-900 p-4 pb-8 text-left shadow-xl">
           <colgroup>
             <col className="w-1/3" />
             <col className="w-1/3" />
@@ -131,8 +131,8 @@ export default function PlansComparative() {
               aria-hidden="true"
               className="h-5 w-5 text-blue-500"
             />
-            <p className="ml-2 text-xs font-reddit text-zinc-600">
-              Son herramientas que tienen cargos extras.
+            <p className="ml-2 font-reddit text-xs text-zinc-600">
+              Feature con cargos adicionales.
             </p>
           </div>
         </div>

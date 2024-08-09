@@ -4,8 +4,8 @@ import { RoutePaths } from '../general/RoutePaths';
 const navigation = {
     main: [
       { name: 'Home', to: RoutePaths.HOME },
-      { name: 'Contáctanos', to: RoutePaths.DEMOLEAD },
-      { name: 'Nosotros', to: '#' },
+      { name: 'Contáctanos', to: RoutePaths.CONTACTANOS },
+      { name: 'Nosotros', to: RoutePaths.NOSOTROS },
       { name: 'Ingresa', to: 'https://app.talia.cl' },
     ],
   }
