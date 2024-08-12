@@ -2,7 +2,7 @@ export default function Testimonial() {
   return (
     <div className="bg-white py-16 sm:py-12">
       <div className="mx-auto max-w-6xl px-6 xl:px-0 xl:pt-24">
-        <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl rounded-md sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
+        <div className="relative overflow-hidden rounded-md bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
           <img
             alt=""
             src="https://images.unsplash.com/photo-1674918732025-02d6639e5b1a?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -44,10 +44,7 @@ export default function Testimonial() {
                 </p>
               </blockquote>
               <figcaption className="mt-6 text-base text-white">
-                <div className="font-reddit font-semibold">
-                  Juan Cristóbal Oliva
-                </div>
-                <div className="mt-1 font-reddit">Talia Abogados</div>
+                <div className="font-reddit font-semibold">Talia Abogados</div>
               </figcaption>
             </figure>
           </div>

@@ -63,13 +63,13 @@ export default function DemoLeadComponent() {
             </h1>
           </div>
         </div>
-        <div className="space-y-12">
+        <div className="-mt-24 space-y-12 sm:mt-0">
           <form
             id="contact-form"
             ref={formRef}
             action="#"
             method="POST"
-            className="mt-0 overflow-hidden bg-white p-8 py-16 shadow-xl rounded-md md:mt-6"
+            className="mt-0 overflow-hidden rounded-md bg-white p-8 py-16 shadow-xl md:mt-6"
           >
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>

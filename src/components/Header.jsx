@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // Importa useNavigate
 import { RoutePaths } from "../general/RoutePaths";
 import { Dialog, Popover, Transition } from "@headlessui/react";
 import {
@@ -24,6 +24,12 @@ const company = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate(); // Usa useNavigate para programar la navegación
+
+  const handleMobileLinkClick = (path) => {
+    setMobileMenuOpen(false);
+    navigate(path); // Navega a la ruta correspondiente
+  };
 
   return (
     <header className="bg-white">
@@ -152,12 +158,12 @@ export default function Header() {
             <div className="flow-root">
               <div className="my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  <Link
-                    to={RoutePaths.HOME}
-                    className="-mx-3 block rounded-lg px-3 py-2 font-reddit leading-7 text-zinc-800 hover:bg-gray-50"
+                  <button
+                    onClick={() => handleMobileLinkClick(RoutePaths.HOME)}
+                    className="-mx-3 block w-full rounded-lg px-3 py-2 text-left font-reddit leading-7 text-zinc-800 hover:bg-gray-50"
                   >
                     Inicio
-                  </Link>
+                  </button>
                   {company.map((item) => (
                     <a
                       key={item.name}
