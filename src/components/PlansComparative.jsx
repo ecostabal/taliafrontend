@@ -31,11 +31,11 @@ const sections = [
         tiers: { "Plan Empresa": true, "Plan Abogado": true },
       },
       {
-        name: "Búsqueda de Estudios Jurídicos",
+        name: "Búsqueda de Estudios Jurídicos (RFP)",
         tiers: { "Plan Empresa": true, "Plan Abogado": true },
       },
       {
-        name: "Solicitud de Contratos y otros Escritos (RFP)",
+        name: "Solicitud de Contratos y otros Escritos",
         tiers: { "Plan Empresa": true, "Plan Abogado": "Opcional" },
       },
       {
