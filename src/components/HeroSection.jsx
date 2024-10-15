@@ -34,10 +34,15 @@ export default function HeroSection() {
             </div>
           </div>
           <h1 className="font-reddit text-3xl font-normal leading-snug text-zinc-800 sm:text-3xl sm:leading-snug">
-            Arma y optimiza tus procesos legales a través de <span className="font-semibold text-blue-500">Gerencia Legal Virtual</span> con nuestro Software de trabajo en tiempo real.
+            <span className="font-semibold text-blue-500">
+              Simplifica tus gestiones legales
+            </span>{" "}
+            con nuestro software de trabajo en tiempo real.
           </h1>
           <p className="font-reddit text-zinc-600">
-            Somos la primera plataforma todo en uno que te brindará las herramientas, el soporte y los recursos que necesitas para enfrentar tus desafíos legales con éxito.
+            Somos la primera plataforma que te brinda las herramientas, el
+            soporte y los recursos que necesitas para enfrentar tus desafíos
+            legales con éxito.
           </p>
           <div className="flex items-center gap-4">
             <Link

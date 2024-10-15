@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import Testimonial from "../components/Testimonial";
-import Features from "../components/Features";
+import Products from "../components/Products";
 import Pricing from "../components/Pricing";
-import PlansComparative from "../components/PlansComparative";
-import PracticeAreas from "../components/PracticeAreas";
+import UISection from "../components/UISection";
+import FAQ from "../components/FAQ";
 
 export const Home = () => {
-  const currentYear = new Date().getFullYear();
 
   return (
     <div>
       <HeroSection />
       <Testimonial />
-      <Features />
+      <Products />
       <Pricing />
-      <PlansComparative />
-      <PracticeAreas/>
+      <UISection />
+      <FAQ />
     </div>
   );
 };

@@ -7,37 +7,17 @@ import {
   
   const tiers = [
     {
-      name: "Plan Empresa",
+      name: "Plan Talia",
       id: "tier-company",
       priceMonthly: "$49",
-      description: "Ideal para empresas que necesitan un control más detallado.",
+      description: "Acceso a la red Talia.",
       href: "#",
       features: [
-        { name: "Solicitud de Contratos y otros Escritos" },
+        { name: "Cotizaciones Ilimitadas" },
+        { name: "Integración API" },
+        { name: "Asesoría Jurídica *" },
         { name: "Firma Virtual de Contratos *" },
-        { name: "Asesoría Legal" },
         { name: "Informes Sociedades y Poderes *" },
-        { name: "Búsqueda de Estudios Jurídicos (RFP)" },
-        { name: "Estado de Tareas" },
-        { name: "Seguimiento y Asignación de Tareas" },
-        { name: "Carpeta de Documentos" },
-      ],
-    },
-    {
-      name: "Plan Abogado",
-      id: "tier-team",
-      priceMonthly: "$29",
-      description: "Perfecto para abogados individuales o pequeños equipos.",
-      href: "#",
-      features: [
-        { name: "Solicitud de Contratos y otros Escritos *" },
-        { name: "Firma Virtual de Contratos *" },
-        { name: "Asesoría Legal *" },
-        { name: "Informes Sociedades y Poderes *" },
-        { name: "Búsqueda de Estudios Jurídicos (RFP)" },
-        { name: "Estado de Tareas" },
-        { name: "Seguimiento y Asignación de Tareas" },
-        { name: "Carpeta de Documentos" },
       ],
     },
   ];
@@ -47,9 +27,9 @@ import {
       <div className="isolate overflow-hidden bg-gray-900">
         <div className="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-32 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="font-reddit leading-7 text-blue-500">Planes.</h2>
+            <h2 className="font-reddit leading-7 text-blue-500">Suscripción.</h2>
             <p className="mt-2 font-reddit text-3xl tracking-tight text-white sm:text-4xl">
-              Planes que se adaptan a tus necesidades.
+              Un plan único de suscripción desde 1 UF.
             </p>
           </div>
           <div className="relative mt-6">
@@ -77,7 +57,7 @@ import {
         <div className="flow-root bg-white pb-24 sm:pb-32">
           <div className="-mt-80">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2">
+              <div className="grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl sm:mx-64">
                 {tiers.map((tier) => (
                   <div
                     key={tier.id}
