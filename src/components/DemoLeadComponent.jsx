@@ -21,7 +21,7 @@ export default function DemoLeadComponent() {
     const phone = form["phone"].value;
     const companyName = form["company-name"].value;
 
-    if (!firstName || !lastName || !email || !phone || !companyName) {
+    if (!firstName || !lastName || !email || !phone) {
       alert("Por favor, completa todos los campos requeridos.");
       return;
     }
@@ -31,7 +31,7 @@ export default function DemoLeadComponent() {
       lastName,
       email,
       phone,
-      companyName,
+      companyName, // Es opcional, así que puede estar vacío
     };
 
     const success = await sendQuoteToMonday(formData);
@@ -149,7 +149,7 @@ export default function DemoLeadComponent() {
                   htmlFor="company-name"
                   className="block font-reddit text-sm leading-6 text-zinc-800"
                 >
-                  Nombre Empresa *
+                  Nombre Empresa
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -157,7 +157,6 @@ export default function DemoLeadComponent() {
                     name="company-name"
                     id="company-name"
                     className="block w-full border-0 px-3.5 py-2 font-reddit text-zinc-600 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6"
-                    required
                   />
                 </div>
               </div>
@@ -179,6 +178,16 @@ export default function DemoLeadComponent() {
                 <ArrowLongRightIcon className="ml-2 h-4 w-4" />
               </button>
             </div>
+            {showSuccessMessage && (
+              <p className="mt-4 font-reddit text-sm text-green-600">
+                ¡Tu mensaje ha sido enviado con éxito!
+              </p>
+            )}
+            {showErrorMessage && (
+              <p className="mt-4 font-reddit text-sm text-red-600">
+                Hubo un error al enviar tu mensaje. Intenta de nuevo.
+              </p>
+            )}
           </form>
         </div>
       </div>
